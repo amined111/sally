@@ -1,14 +1,13 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "A";
+const prefix = "S";
 
 
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "485917652120764429") return;
- 
+  if (message.author.id !== "526874278142935070") return;
 if (message.content.startsWith(prefix + 'setstream')) {
   client.user.setGame(argresult, "https://www.twitch.tv/amine12a");
      console.log('test' + argresult);
